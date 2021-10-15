@@ -1,5 +1,5 @@
 const gulp = require('gulp'),
-      rollup = require('gulp-rollup'),  
+      rollup = require('gulp-rollup'),
       gulpif = require('gulp-if'),
       del = require('del'),
       rename = require('gulp-rename'),
@@ -80,7 +80,7 @@ gulp.task('js:expanded', () => {
          * Cartzilla | Bootstrap E-Commerce Template
          * Copyright 2021 Createx Studio
          * Theme core scripts
-         * 
+         *
          * @author Createx Studio
          * @version 2.3.0
          */
@@ -106,7 +106,7 @@ gulp.task('js:minified', () => {
          * Cartzilla | Bootstrap E-Commerce Template
          * Copyright 2021 Createx Studio
          * Theme core scripts
-         * 
+         *
          * @author Createx Studio
          * @version 2.3.0
          */
@@ -191,6 +191,7 @@ gulp.task('watch', () => {
       baseDir: path.dist,
     },
     open: true, // or "local"
+		port: process.env.PORT || 5000
   });
   gulp.watch(path.src_pug + '/**/*.pug', gulp.series('pug'))
     .on('all', (event, filepath) => {

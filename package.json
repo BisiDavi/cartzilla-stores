@@ -4,7 +4,9 @@
   "description": "Cartzilla - Bootstrap E-Commerce Template",
   "main": "index.html",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+		"start": "node app.js",
+		"heroku-postbuild": "gulp" 
   },
   "author": "https://createx.studio/",
   "license": "ISC",
